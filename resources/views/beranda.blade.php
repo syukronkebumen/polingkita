@@ -11,7 +11,7 @@
             <p data-aos="fade-up" data-aos-delay="100">Luncurkan polling Anda dengan cepat dan buat keputusan yang lebih cerdas<br></p>
             <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
                 <a href="#about" class="btn-get-started">Mulai</a>
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                <a href="/hasil-polling" class="btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Lihat Hasil</span></a>
             </div>
             <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
@@ -30,8 +30,8 @@
                 <div class="service-item d-flex">
                     <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
                     <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        <h4 class="title"><a href="#" class="stretched-link">Kemudahan Penggunaan</a></h4>
+                        <p class="description">Aplikasi dirancang agar pengguna dapat membuat dan mengikuti polling dengan cepat dan mudah.</p>
                     </div>
                 </div>
             </div>
@@ -41,8 +41,8 @@
                 <div class="service-item d-flex">
                     <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
                     <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exa</p>
+                        <h4 class="title"><a href="#" class="stretched-link">Hasil Instan</a></h4>
+                        <p class="description">Pengguna bisa melihat hasil polling secara real-time, memungkinkan interaksi yang lebih dinamis dan responsif</p>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -51,8 +51,8 @@
                 <div class="service-item d-flex">
                     <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
                     <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                        <h4 class="title"><a href="#" class="stretched-link">Keamanan Data</a></h4>
+                        <p class="description">Melindungi privasi dan data pengguna dengan enkripsi yang kuat dan kebijakan privasi yang ketat</p>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -66,7 +66,7 @@
 <!-- About Section -->
 <section id="about" class="about section">
     <div class="container section-title" data-aos="fade-up">
-        <h2>Siapakah Calon Bupati Lampung Timur Periode 2024 - 2029 Pilihan Anda ? ?</h2>
+        <h2>Siapakah Calon Bupati Lampung Timur Periode 2024 - 2029 Pilihan Anda ?</h2>
         <p>Satu suara bisa membuat perubahan besar. Mari kita pilih pemimpin yang terbaik untuk daerah kita</p>
     </div>
     <div class="container">
@@ -101,7 +101,7 @@
                     </div>
                 </form>
             </div>
-            <a class="btn btn-info" href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i> Lihat Hasil Polling</a>
+            <a class="btn btn-info" href="{{ route('hasil-polling') }}"><i class="fa fa-pie-chart" aria-hidden="true"></i> Lihat Hasil Polling</a>
         </div>
     </div>
 </section><!-- /About Section -->
@@ -148,8 +148,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Fitur</h2>
+        <p>Berikan suara Anda dan lihat hasil polling secara langsung!</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -162,10 +162,9 @@
                         <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
                             <i class="bi bi-binoculars"></i>
                             <div>
-                                <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+                                <h4 class="d-none d-lg-block">Interaksi dan Keterlibatan Pengguna</h4>
                                 <p>
-                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur
+                                    Polling meningkatkan interaksi dan partisipasi pengguna secara cepat dan mudah, memperkuat hubungan penyelenggara-audiens.
                                 </p>
                             </div>
                         </a>
@@ -174,10 +173,9 @@
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
                             <i class="bi bi-box-seam"></i>
                             <div>
-                                <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
+                                <h4 class="d-none d-lg-block">Pengumpulan Data yang Cepat dan Efisien</h4>
                                 <p>
-                                    Recusandae atque nihil. Delectus vitae non similique magnam molestiae sapiente similique
-                                    tenetur aut voluptates sed voluptas ipsum voluptas
+                                    Polling mengumpulkan data instan untuk keputusan informatif, sangat berguna dalam rapat dan survei konsumen.
                                 </p>
                             </div>
                         </a>
@@ -186,10 +184,9 @@
                         <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
                             <i class="bi bi-brightness-high"></i>
                             <div>
-                                <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
+                                <h4 class="d-none d-lg-block">Anonimitas dan Kejujuran Responden</h4>
                                 <p>
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                                    Debitis nulla est maxime voluptas dolor aut
+                                    Anonimitas polling memastikan jawaban jujur dari responden, meningkatkan keandalan data dalam berbagai survei.
                                 </p>
                             </div>
                         </a>
@@ -223,67 +220,13 @@
 
 </section><!-- /Features Section -->
 
-<!-- Features Details Section -->
-<section id="features-details" class="features-details section">
-
-    <div class="container">
-
-        <div class="row gy-4 justify-content-between features-item">
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="content">
-                    <h3>Corporis temporibus maiores provident</h3>
-                    <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-                    </p>
-                    <a href="#" class="btn more-btn">Learn More</a>
-                </div>
-            </div>
-
-        </div><!-- Features Item -->
-
-        <div class="row gy-4 justify-content-between features-item">
-
-            <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="content">
-                    <h3>Neque ipsum omnis sapiente quod quia dicta</h3>
-                    <p>
-                        Quidem qui dolore incidunt aut. In assumenda harum id iusto lorena plasico mares
-                    </p>
-                    <ul>
-                        <li><i class="bi bi-easel flex-shrink-0"></i> Et corporis ea eveniet ducimus.</li>
-                        <li><i class="bi bi-patch-check flex-shrink-0"></i> Exercitationem dolorem sapiente.</li>
-                        <li><i class="bi bi-brightness-high flex-shrink-0"></i> Veniam quia modi magnam.</li>
-                    </ul>
-                    <p></p>
-                    <a href="#" class="btn more-btn">Learn More</a>
-                </div>
-
-            </div>
-
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
-            </div>
-
-        </div><!-- Features Item -->
-
-    </div>
-
-</section><!-- /Features Details Section -->
-
 <!-- Services Section -->
 <section id="services" class="services section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Servis</h2>
+        <p>Membuat, mengelola, dan menganalisis polling dengan mudah dan efisien</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -294,9 +237,9 @@
                 <div class="service-item item-cyan position-relative">
                     <i class="bi bi-activity icon"></i>
                     <div>
-                        <h3>Nesciunt Mete</h3>
-                        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
-                        <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        <h3>Pembuatan Polling Cepat</h3>
+                        <p>Pengguna dapat membuat polling dengan berbagai opsi pertanyaan dan jawaban dalam hitungan menit</p>
+                        <a href="#!" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -305,9 +248,9 @@
                 <div class="service-item item-orange position-relative">
                     <i class="bi bi-broadcast icon"></i>
                     <div>
-                        <h3>Eosle Commodi</h3>
-                        <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
-                        <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        <h3>Pengelolaan Hasil Real-Time</h3>
+                        <p>Menyediakan visualisasi hasil polling secara langsung, memungkinkan pengguna untuk melihat dan menganalisis data dengan grafik dan diagram yang mudah dipahami</p>
+                        <a href="#!" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -316,9 +259,9 @@
                 <div class="service-item item-teal position-relative">
                     <i class="bi bi-easel icon"></i>
                     <div>
-                        <h3>Ledo Markt</h3>
-                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                        <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        <h3>Keamanan dan Privasi Data</h3>
+                        <p>Melindungi informasi pribadi dan hasil polling pengguna dengan enkripsi end-to-end dan kebijakan privasi yang ketat</p>
+                        <a href="#!" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -327,9 +270,9 @@
                 <div class="service-item item-red position-relative">
                     <i class="bi bi-bounding-box-circles icon"></i>
                     <div>
-                        <h3>Asperiores Commodi</h3>
-                        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                        <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        <h3>Kustomisasi Polling</h3>
+                        <p>Memberikan opsi kustomisasi seperti tema warna, logo, dan gambar latar untuk menciptakan pengalaman yang sesuai dengan branding atau preferensi pengguna</p>
+                        <a href="#!" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -338,9 +281,9 @@
                 <div class="service-item item-indigo position-relative">
                     <i class="bi bi-calendar4-week icon"></i>
                     <div>
-                        <h3>Velit Doloremque.</h3>
-                        <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                        <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        <h3>Notifikasi dan Pengingat</h3>
+                        <p>Mengirimkan pemberitahuan dan pengingat kepada peserta polling untuk memastikan partisipasi yang tinggi dan menginformasikan tentang hasil atau polling baru</p>
+                        <a href="#!" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -349,9 +292,9 @@
                 <div class="service-item item-pink position-relative">
                     <i class="bi bi-chat-square-text icon"></i>
                     <div>
-                        <h3>Dolori Architecto</h3>
-                        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                        <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                        <h3>Integrasi Media Sosial</h3>
+                        <p>Memungkinkan pengguna untuk membagikan polling mereka dengan mudah di berbagai platform media sosial, meningkatkan jangkauan dan partisipasi</p>
+                        <a href="#!" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div><!-- End Service Item -->
@@ -362,148 +305,12 @@
 
 </section><!-- /Services Section -->
 
-<!-- More Features Section -->
-<section id="more-features" class="more-features section">
-
-    <div class="container">
-
-        <div class="row justify-content-around gy-4">
-
-            <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                <h3>Enim quis est voluptatibus aliquid consequatur</h3>
-                <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p>
-
-                <div class="row">
-
-                    <div class="col-lg-6 icon-box d-flex">
-                        <i class="bi bi-easel flex-shrink-0"></i>
-                        <div>
-                            <h4>Lorem Ipsum</h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias </p>
-                        </div>
-                    </div><!-- End Icon Box -->
-
-                    <div class="col-lg-6 icon-box d-flex">
-                        <i class="bi bi-patch-check flex-shrink-0"></i>
-                        <div>
-                            <h4>Nemo Enim</h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiise</p>
-                        </div>
-                    </div><!-- End Icon Box -->
-
-                    <div class="col-lg-6 icon-box d-flex">
-                        <i class="bi bi-brightness-high flex-shrink-0"></i>
-                        <div>
-                            <h4>Dine Pad</h4>
-                            <p>Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit</p>
-                        </div>
-                    </div><!-- End Icon Box -->
-
-                    <div class="col-lg-6 icon-box d-flex">
-                        <i class="bi bi-brightness-high flex-shrink-0"></i>
-                        <div>
-                            <h4>Tride clov</h4>
-                            <p>Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit</p>
-                        </div>
-                    </div><!-- End Icon Box -->
-
-                </div>
-
-            </div>
-
-            <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-3.jpg" alt="">
-            </div>
-
-        </div>
-
-    </div>
-
-</section><!-- /More Features Section -->
-
-<!-- Pricing Section -->
-<section id="pricing" class="pricing section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="pricing-item">
-                    <h3>Free Plan</h3>
-                    <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-                    <h4><sup>$</sup>0<span> / month</span></h4>
-                    <a href="#" class="cta-btn">Start a free trial</a>
-                    <p class="text-center small">No credit card required</p>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                        <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                        <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        <li class="na"><i class="bi bi-x"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                        <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-                    </ul>
-                </div>
-            </div><!-- End Pricing Item -->
-
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="pricing-item featured">
-                    <p class="popular">Popular</p>
-                    <h3>Business Plan</h3>
-                    <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-                    <h4><sup>$</sup>29<span> / month</span></h4>
-                    <a href="#" class="cta-btn">Start a free trial</a>
-                    <p class="text-center small">No credit card required</p>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                        <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                        <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                        <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-                    </ul>
-                </div>
-            </div><!-- End Pricing Item -->
-
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="pricing-item">
-                    <h3>Developer Plan</h3>
-                    <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
-                    <h4><sup>$</sup>49<span> / month</span></h4>
-                    <a href="#" class="cta-btn">Start a free trial</a>
-                    <p class="text-center small">No credit card required</p>
-                    <ul>
-                        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                        <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                        <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
-                        <li><i class="bi bi-check"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
-                    </ul>
-                </div>
-            </div><!-- End Pricing Item -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Pricing Section -->
-
 <!-- Faq Section -->
 <section id="faq" class="faq section">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
+        <h2>Pertanyaan yang Sering Diajukan</h2>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -515,49 +322,51 @@
                 <div class="faq-container">
 
                     <div class="faq-item faq-active">
-                        <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                        <h3>Apa keuntungan menggunakan aplikasi polling?</h3>
                         <div class="faq-content">
-                            <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                            <p>Aplikasi polling memungkinkan pengguna untuk mengumpulkan pendapat secara cepat, mudah, dan efisien dari berbagai peserta, serta menganalisis hasil dengan cepat.</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                        <h3>Bagaimana cara membuat polling menggunakan aplikasi ini?</h3>
                         <div class="faq-content">
-                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            <p>Pengguna dapat membuat polling dengan mengakses fitur pembuatan polling di aplikasi dan mengikuti langkah-langkah yang intuitif.</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                        <h3>Apakah hasil polling dapat dilihat secara real-time?
+                        </h3>
                         <div class="faq-content">
-                            <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            <p>Ya, aplikasi menyajikan hasil polling secara langsung, memungkinkan pengguna untuk melihat respons secara real-time.</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                        <h3>Bagaimana keamanan data pengguna dijamin dalam aplikasi polling?</h3>
                         <div class="faq-content">
-                            <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                            <p>Aplikasi menerapkan enkripsi end-to-end dan kebijakan privasi ketat untuk melindungi data pengguna</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                        <h3>Apakah aplikasi ini mendukung integrasi dengan media sosial?</h3>
                         <div class="faq-content">
-                            <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                            <p>Ya, pengguna dapat membagikan polling mereka melalui berbagai platform media sosial dengan mudah</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
 
                     <div class="faq-item">
-                        <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                        <h3>Apakah aplikasi ini menyediakan fitur notifikasi untuk mengingatkan peserta polling?
+                        </h3>
                         <div class="faq-content">
-                            <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                            <p>Ya, aplikasi mengirimkan notifikasi kepada peserta untuk memastikan partisipasi yang aktif.</p>
                         </div>
                         <i class="faq-toggle bi bi-chevron-right"></i>
                     </div><!-- End Faq item-->
@@ -578,7 +387,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Pengalaman dari klien yang telah menggunakan layanan kami</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -617,7 +426,7 @@
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
-                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                            Aplikasi polling ini sangat membantu dalam mendapatkan feedback cepat dari tim kami. Antarmukanya mudah digunakan dan hasilnya bisa langsung dilihat!
                         </p>
                         <div class="profile mt-auto">
                             <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
@@ -633,7 +442,7 @@
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
-                            Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                            Saya menggunakan aplikasi ini untuk mengadakan polling di kelas. Siswa sangat antusias, dan saya bisa melihat hasilnya langsung di layar proyektor. Sangat praktis!
                         </p>
                         <div class="profile mt-auto">
                             <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
@@ -649,7 +458,7 @@
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
-                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                            Keamanan data adalah prioritas saya, dan aplikasi ini memberikan jaminan privasi yang saya butuhkan. Selain itu, fitur kustomisasinya memudahkan saya membuat polling yang menarik.
                         </p>
                         <div class="profile mt-auto">
                             <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
@@ -665,7 +474,7 @@
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
-                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                            Integrasi dengan media sosial memudahkan saya menyebarkan polling kepada peserta acara. Partisipasi meningkat drastis, dan saya bisa mengukur kepuasan mereka secara real-time.
                         </p>
                         <div class="profile mt-auto">
                             <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
@@ -681,7 +490,7 @@
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                         </div>
                         <p>
-                            Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                            Aplikasi ini telah menjadi alat penting untuk mengukur sentimen karyawan dalam waktu singkat. Notifikasi dan pengingatnya membantu memastikan semua orang berpartisipasi.
                         </p>
                         <div class="profile mt-auto">
                             <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
@@ -704,8 +513,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Kontak</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut atau bantuan.</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">

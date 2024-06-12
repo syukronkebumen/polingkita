@@ -34,8 +34,8 @@
                                         @endif
                                     </td>
                                     <td>{{$candidate->nama_ketua.' dan '.$candidate->nama_wakil}}</td>
-                                    <td>{{$candidate->users->count()}} Suara</td>
-                                    <td>{{number_format(($candidate->users->count()/$jumlah)*100)}} %</td>
+                                    {{-- <td>{{$candidate->users->count()}} Suara</td> --}}
+                                    {{-- <td>{{number_format(($candidate->users->count()/$jumlah)*100)}} %</td> --}}
                                 </tr>
                                 @endforeach
                                 <tfoot>

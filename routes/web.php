@@ -12,6 +12,7 @@
 */
 
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\ChartController;
 use App\Http\Controllers\ChoiceController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
@@ -46,3 +47,4 @@ Route::post('/users-pilih', [ChoiceController::class, 'pilih'])->name('users.pil
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/hasil-polling', [ChartController::class, 'index'])->name('hasil-polling');
