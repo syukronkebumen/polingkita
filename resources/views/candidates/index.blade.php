@@ -41,7 +41,7 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <a class="btn btn-info text-white btn-sm" href="#">Edit</a>
+                                    <a class="btn btn-info text-white btn-sm" href="/candidates/{{ $candidate->id}}/edit">Edit</a>
                                     <form onsubmit="return confirm('Delete this candidate permanently ?')" class="d-inline" action="#" method="POST">
                                         @csrf
                                         <input type="hidden" name="_method" value="DELETE">
