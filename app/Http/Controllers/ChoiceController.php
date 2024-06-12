@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Candidate;
+use App\Models\Rekap;
 use App\Models\User;
 use Auth;
 
@@ -26,14 +27,18 @@ class ChoiceController extends Controller
         return view('pilihan.index', ['candidates'=>$candidate]);
     }
 
-    public function pilih(Request $request, $id)
+    public function pilih(Request $request)
     {
-        $id = FacadesAuth::user()->id;
-        $user = User::findOrFail($id);
-       
-        $user->candidate_id = $request->get('candidate_id');
-        $user->status = "SUDAH";
-        $user->save();
-        return redirect()->route('candidates.pilihan')->with('status', 'You Have Been Choiched');
+        $ipAddress = $request->ip();
+        $rekapSuara = new Rekap();
+        $rekapSuara->candidat_id = $request->candidate_id;
+        $rekapSuara->ip_address = $ipAddress;
+        // check IP exist
+        $checkIp = Rekap::where('ip_address', $ipAddress)->first();
+        if ($checkIp) {
+            return redirect()->route('home')->with('error', 'Gagal, anda sudah memberikan pilihan sebelumnya');
+        }
+        $rekapSuara->save();
+        return redirect()->route('home')->with('status', 'Selamat anda berhasil memilih !');
     }
 }

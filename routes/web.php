@@ -36,7 +36,7 @@ Route::resource('users', UserController::class);
 Route::resource('candidates', CandidateController::class);
 
 Route::get('/pilihan', [ChoiceController::class, 'pilihan'])->name('candidates.pilihan');
-Route::put('/users/{id}/pilih', [ChoiceController::class, 'pilih'])->name('users.pilih');
+Route::post('/users-pilih', [ChoiceController::class, 'pilih'])->name('users.pilih');
 
 
 

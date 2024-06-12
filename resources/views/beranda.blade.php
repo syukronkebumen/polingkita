@@ -77,26 +77,31 @@
                     {{session('status')}}
                 </div>
                 @endif
-                <form enctype="multipart/form-data" action="#" method="POST">
+                @if(session('error'))
+                <div class="alert alert-danger">
+                    {{session('error')}}
+                </div>
+                @endif
+                <form id="unique-form" enctype="multipart/form-data" action="{{ route('users.pilih') }}" method="POST">
                     @csrf
-                    <input type="hidden" name="_method" value="PUT" class="form-control">
+                    <input type="hidden" name="_method" class="form-control">
                     <div class="card-group" style="display: block">
                         @foreach ($candidates as $candidate)
                         <div class="card">
                             <h1 align="center">{{$candidate->id}}</h1>
                             <img class="card-img-top" src="{{asset('storage/'.$candidate->photo_paslon)}}" alt="Card image cap">
                             <div class="card-body">
-                                <h5 align="center" class="card-title">{{$candidate->nama_ketua}} dan {{$candidate->nama_wakil}}</h5>
+                                <h5 align="center" class="card-title">{{$candidate->nama_ketua}}</h5>
                             </div>
                             <div class="form-group" align="center">
                                 <button name="candidate_id" value="{{$candidate->id}}" class="btn btn-primary">PILIH</button>
                             </div>
                         </div>
-
                         @endforeach
                     </div>
                 </form>
             </div>
+            <a class="btn btn-info" href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i> Lihat Hasil Polling</a>
         </div>
     </div>
 </section><!-- /About Section -->
