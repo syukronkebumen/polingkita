@@ -91,7 +91,6 @@ class CandidateController extends Controller
      */
     public function edit($id)
     {
-        dd('sasa');
         $candidate = Candidate::findOrFail($id);
         return view('candidates.edit', ['candidate'=>$candidate]);
     }
