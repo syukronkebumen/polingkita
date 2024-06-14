@@ -28,8 +28,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-body">
-                        <table class="table table-hover table-bordered">
+                        <table class="table table-hover">
                             <thead>
                                 <tr>
                                     <th>No. Urut</th>
@@ -55,7 +54,6 @@
                                 @endforeach
                             </tbody>
                         </table>
-                    </div>
                 </div>
                 <div class="text-center">
                     <div class="dropdown">
