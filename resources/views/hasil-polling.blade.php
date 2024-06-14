@@ -40,9 +40,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($candidates as $candidate)
+                                @foreach ($candidates as $key => $candidate)
                                 <tr>
-                                    <td>{{$candidate['id']}}</td>
+                                    <td>{{$key + 1}}</td>
                                     <td>
                                         @if ($candidate['photo_paslon'])
                                         <img src="{{asset('storage/'.$candidate['photo_paslon'])}}" width="100px" />

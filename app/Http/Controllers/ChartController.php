@@ -25,6 +25,10 @@ class ChartController extends Controller
             ];
         }
 
+        usort($results, function($a, $b) {
+            return $b['jumlah'] <=> $a['jumlah'];
+        });
+
         $dataLoop = [];
         foreach ($dataCandidate as $key => $value) {
             array_push($dataLoop, $value->nama_ketua);
