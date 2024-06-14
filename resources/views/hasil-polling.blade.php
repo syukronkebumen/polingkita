@@ -35,22 +35,22 @@
                                     <th>No. Urut</th>
                                     <th>Foto Calon</th>
                                     <th>Nama Calon</th>
-                                    {{-- <th>Jumlah Suara</th>
-                                    <th>Persentase</th> --}}
+                                    <th>Jumlah Suara</th>
+                                    <th>Persentase</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($candidates as $candidate)
                                 <tr>
-                                    <td>{{$candidate->id}}</td>
+                                    <td>{{$candidate['id']}}</td>
                                     <td>
-                                        @if ($candidate->photo_paslon)
-                                        <img src="{{asset('storage/'.$candidate->photo_paslon)}}" width="100px" />
+                                        @if ($candidate['photo_paslon'])
+                                        <img src="{{asset('storage/'.$candidate['photo_paslon'])}}" width="100px" />
                                         @endif
                                     </td>
-                                    <td>{{$candidate->nama_ketua}}</td>
-                                    {{-- <td>{{$candidate->users->count()}} Suara</td> --}}
-                                    {{-- <td>{{number_format(($candidate->users->count()/$jumlah)*100)}} %</td> --}}
+                                    <td>{{$candidate['nama_ketua']}}</td>
+                                    <td>{{$candidate['jumlah']}} Suara</td>
+                                    <td>{{number_format(($candidate['jumlah']/$jumlah)*100)}} %</td>
                                 </tr>
                                 @endforeach
                             </tbody>

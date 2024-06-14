@@ -12,6 +12,19 @@ class ChartController extends Controller
     {
         $chart = new SampleChart;
         $dataCandidate = Candidate::get();
+        $dataWithJml = Candidate::latest();
+        $dataWithJml = $dataWithJml->cursor();
+        $results = [];
+        foreach ($dataWithJml as $query) {
+            $selectRekap = Rekap::where('candidat_id', $query->id)->count();
+            $results[] = [
+                "id" => $query->id,
+                "nama_ketua" => $query->nama_ketua,
+                "photo_paslon" => $query->photo_paslon,
+                "jumlah" => $selectRekap
+            ];
+        }
+
         $dataLoop = [];
         foreach ($dataCandidate as $key => $value) {
             array_push($dataLoop, $value->nama_ketua);
@@ -34,9 +47,10 @@ class ChartController extends Controller
         foreach ($candidatCount as $key => $value) {
             array_push($arrData, $value);
         }
+
         $chart->labels($dataLoop);
         $chart->dataset('Jumlah', 'pie', $arrData);
         $jumlah = Rekap::count();
-        return view('hasil-polling', ['chart' => $chart, 'jumlah' => $jumlah, 'candidates' => $dataCandidate]);
+        return view('hasil-polling', ['chart' => $chart, 'jumlah' => $jumlah, 'candidates' => $results]);
     }
 }
