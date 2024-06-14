@@ -27,33 +27,33 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>No. Urut</th>
-                                    <th>Foto Calon</th>
-                                    <th>Nama Calon</th>
-                                    <th>Jumlah Suara</th>
-                                    <th>Persentase</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($candidates as $key => $candidate)
-                                <tr>
-                                    <td>{{$key + 1}}</td>
-                                    <td>
-                                        @if ($candidate['photo_paslon'])
-                                        <img src="{{asset('storage/'.$candidate['photo_paslon'])}}" width="100px" />
-                                        @endif
-                                    </td>
-                                    <td>{{$candidate['nama_ketua']}}</td>
-                                    <td>{{$candidate['jumlah']}} Suara</td>
-                                    <td>{{number_format(($candidate['jumlah']/$jumlah)*100)}} %</td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>No. Urut</th>
+                                <th>Foto Calon</th>
+                                <th>Nama Calon</th>
+                                <th>Jumlah Suara</th>
+                                <th>Persentase</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($candidates as $key => $candidate)
+                            <tr>
+                                <td>{{$key + 1}}</td>
+                                <td>
+                                    @if ($candidate['photo_paslon'])
+                                    <img src="{{asset('storage/'.$candidate['photo_paslon'])}}" width="100px" />
+                                    @endif
+                                </td>
+                                <td>{{$candidate['nama_ketua']}}</td>
+                                <td>{{$candidate['jumlah']}} Suara</td>
+                                <td>{{number_format(($candidate['jumlah']/$jumlah)*100)}} %</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
                 </div>
                 <div class="text-center">
                     <div class="dropdown">
