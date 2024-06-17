@@ -49,7 +49,7 @@
                                 </td>
                                 <td>{{$candidate['nama_ketua']}}</td>
                                 <td>{{$candidate['jumlah']}} Suara</td>
-                                <td>{{number_format(($candidate['jumlah']/$jumlah)*100)}} %</td>
+                                <td>{{number_format(($candidate['jumlah']/$jumlah)*100, 2)}} %</td>
                             </tr>
                             @endforeach
                         </tbody>
