@@ -9,8 +9,17 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta name="description" content="Situs polling independen terpercaya, menyajikan survei objektif dan analisis akurat tentang isu-isu terkini untuk membantu Anda membuat keputusan yang baik">
+    <meta name="keywords" content="hasil polling akurat, polling online, survei online, analisis data, polling independen terpercaya, survei isu terkini">
+    <meta name="author" content="pollingindependent">
+
+    <!-- Open Graph Meta Tags untuk Social Media -->
+    <meta property="og:title" content="PollingIndependent">
+    <meta property="og:description" content="Situs polling independen terpercaya, menyajikan survei objektif dan analisis akurat tentang isu-isu terkini untuk membantu Anda membuat keputusan yang baik">
+    <meta property="og:image" content="{{ asset('assets/img/favicon.png') }}">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
 
@@ -195,5 +204,22 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
     @stack('script')
 </body>
+<script>
+   // Mendapatkan URL saat ini
+    var currentUrl = window.location.href;
 
+    // Memeriksa apakah elemen meta 'og:url' sudah ada
+    var metaOgUrl = document.querySelector('meta[property="og:url"]');
+
+    if (metaOgUrl) {
+        // Jika meta tag ada, perbarui atribut 'content'
+        metaOgUrl.setAttribute('content', currentUrl);
+    } else {
+        // Jika meta tag tidak ada, buat elemen meta baru
+        metaOgUrl = document.createElement('meta');
+        metaOgUrl.setAttribute('property', 'og:url');
+        metaOgUrl.setAttribute('content', currentUrl);
+        document.head.appendChild(metaOgUrl);
+    }
+</script>
 </html>
