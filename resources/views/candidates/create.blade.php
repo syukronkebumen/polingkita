@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.appadmin')
 <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 @section('content')
     <div class="container">

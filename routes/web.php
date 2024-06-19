@@ -11,11 +11,14 @@
 |
 */
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\ChartController;
 use App\Http\Controllers\ChoiceController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 // Route::get('/', function () {
 //     return redirect('/login');
@@ -48,3 +51,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/hasil-polling', [ChartController::class, 'index'])->name('hasil-polling');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');

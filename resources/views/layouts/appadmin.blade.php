@@ -73,16 +73,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
-                            <li class="nav-item">
-                                @if (Route::has('register'))
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                @endif
-                            </li>
                         @else
                         @if(Auth::user()->roles == '["ADMIN"]')
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{route('users.index')}}" class="nav-link">Managemen Pengguna</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item">
                                 <a href="{{route('candidates.index')}}" class="nav-link">Managemen Kandidat</a>
                             </li>

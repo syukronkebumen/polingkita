@@ -11,11 +11,7 @@ use Illuminate\Support\Facades\Validator;
 class CandidateController extends Controller
 {
     public function __construct(){
-        // $this-> middleware(function($request, $next){
-        //     if (Gate::allows('manage-candidates')) return $next($request);
-
-        //     abort(403,'Anda Tidak memiliki Hak Akses');
-        // });
+        $this->middleware('auth');
     }
     
     /**
