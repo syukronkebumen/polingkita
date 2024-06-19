@@ -16,7 +16,7 @@
     <!-- Open Graph Meta Tags untuk Social Media -->
     <meta property="og:title" content="PollingIndependent">
     <meta property="og:description" content="Situs polling independen terpercaya, menyajikan survei objektif dan analisis akurat tentang isu-isu terkini untuk membantu Anda membuat keputusan yang baik">
-    <meta property="og:image" content="{{ asset('assets/img/favicon.png') }}">
+    <meta property="og:image" content="{{ url('assets/img/favicon.png') }}">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
 
