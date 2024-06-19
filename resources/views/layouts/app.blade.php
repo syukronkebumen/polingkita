@@ -20,6 +20,12 @@
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
 
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
 
@@ -210,7 +216,16 @@
 
     // Memeriksa apakah elemen meta 'og:url' sudah ada
     var metaOgUrl = document.querySelector('meta[property="og:url"]');
-
+    var metacanonical = document.querySelector('link[rel="canonical"]');
+    console.log('sasa', metacanonical)
+    if (metacanonical) {
+        metacanonical.setAttribute('href', currentUrl);
+    }else{
+        metaOgUrl = document.createElement('link');
+        metaOgUrl.setAttribute('rel', 'canonical');
+        metaOgUrl.setAttribute('href', currentUrl);
+        document.head.appendChild(metaOgUrl);
+    }
     if (metaOgUrl) {
         // Jika meta tag ada, perbarui atribut 'content'
         metaOgUrl.setAttribute('content', currentUrl);
