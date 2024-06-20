@@ -57,8 +57,11 @@
                 </div>
                 <div class="text-center">
                     <div class="dropdown">
-                        <button class="btn btn-info mt-2" style="width:217px;" id="btnRefresh" data-txt="Refresh" onclick="function reload(){window.location.reload()} reload(); return false;" type="button">Refresh</button>
+                        <button class="btn btn-info mt-2" style="width:217px;" id="btnRefresh" data-txt="Refresh" onclick="function reload(){window.location.reload()} reload(); return false;" type="button"><i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
                         <a class="btn btn-dark mt-2" style="width:217px;" href="/"><i class="fa mr-2 fa-arrow-left" aria-hidden="true"></i> Kembali Ke Polling</a>
+                        <button class="btn btn-success mt-2" style="width:217px;" onclick="shareToWhatsApp()" type="button">
+                            <i class="fa-brands fa-whatsapp"></i> Bagikan
+                        </button>
                     </div>
                 </div>
             </div>
@@ -66,5 +69,26 @@
     </div>
 
 </section><!-- /Services Section -->
+<script>
+   function shareToWhatsApp() {
+        var url = "https://pollingindependent.com/hasil-polling"; // Replace with the actual polling link if different
+        var text = `
+        Assalamualaikum Wr.Wb.
 
+        Mari berpartisipasi dalam polling untuk menentukan 
+        
+        SIAPAKAH CALON BUPATI LAMPUNG TIMUR PERIODE 2024 - 2029 PILIHAN ANDA! 
+        
+        Suara Anda sangat berharga untuk masa depan Lampung Timur. 
+        
+        Yuk, sampaikan pilihan Anda sekarang juga dan jadilah bagian dari perubahan!
+
+        Berikan suaramu, klik link
+        ${url}
+
+        `;
+        var whatsappUrl = "https://wa.me/?text=" + encodeURIComponent(text);
+        window.open(whatsappUrl, '_blank');
+    }
+</script>
 @endsection
