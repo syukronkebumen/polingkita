@@ -217,7 +217,6 @@
     // Memeriksa apakah elemen meta 'og:url' sudah ada
     var metaOgUrl = document.querySelector('meta[property="og:url"]');
     var metacanonical = document.querySelector('link[rel="canonical"]');
-    console.log('sasa', metacanonical)
     if (metacanonical) {
         metacanonical.setAttribute('href', currentUrl);
     }else{
